@@ -1,4 +1,48 @@
+
+/*
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+*/
+@font-face {
+    font-family: Manrope;
+    src: url(/assets/fonts/Manrope-ExtraLight.woff2) format("woff2");
+    font-weight:200
+}
+
+@font-face {
+    font-family: Manrope;
+    src: url(/assets/fonts/Manrope-Light.woff2) format("woff2");
+    font-weight:300
+}
+
+@font-face {
+    font-family: Manrope;
+    src: url(/assets/fonts/Manrope-Regular.woff2) format("woff2");
+    font-weight:400
+}
+
+@font-face {
+    font-family: Manrope;
+    src: url(/assets/fonts/Manrope-Medium.woff2) format("woff2");
+    font-weight:500
+}
+
+@font-face {
+    font-family: Manrope;
+    src: url(/assets/fonts/Manrope-SemiBold.woff2) format("woff2");
+    font-weight:600
+}
+
+@font-face {
+    font-family: Manrope;
+    src: url(/assets/fonts/Manrope-Bold.woff2) format("woff2");
+    font-weight:700
+}
+
+@font-face {
+    font-family: Manrope;
+    src: url(/assets/fonts/Manrope-ExtraBold.woff2) format("woff2");
+    font-weight:800
+}
 
 :root {
     --secondary-color: #f0f0f0;
@@ -23,12 +67,12 @@ html {
     font-family: "Inter", sans-serif;
     font-family: 'Open Sans', sans-serif;
     */
-    font-family: 'Manrope VF', sans-serif;
+    font-family: Manrope, sans-serif;
     font-weight: 300;
     font-size: 1.2rem;
     line-height: 1.5; /* 160%; */
 
-    margin: 4px;
+    margin: 2px;
 
     -webkit-locale: en;
 
@@ -126,7 +170,7 @@ svg{
 .internal-link {
     color: var(--font-color); 
     text-decoration:  underline; 
-    text-underline-offset: 0.2em; 
+    text-underline-offset: 0.25em; 
     text-decoration-style: solid; 
     text-decoration-thickness: .75px;
 }
