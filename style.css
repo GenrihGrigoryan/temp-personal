@@ -23,14 +23,21 @@ html {
     font-family: "Inter", sans-serif;
     font-family: 'Open Sans', sans-serif;
     */
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Manrope VF', sans-serif;
     font-weight: 300;
     font-size: 1.2rem;
     line-height: 1.5; /* 160%; */
 
     margin: 4px;
 
+    -webkit-locale: en;
+
+    letter-spacing: normal;
+
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
 }
 
 
@@ -253,7 +260,7 @@ hr {
     padding-bottom: 1em;
 }
 
-
+/*
 @media only screen and (max-width: 768px){
 
     html {
@@ -261,3 +268,4 @@ hr {
     }
 
 }
+*/
