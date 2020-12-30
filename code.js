@@ -1,6 +1,5 @@
 const toggleSwitch = document.getElementById('checkbox');
 const currentTheme = localStorage.getItem('theme');
-const currentFont = localStorage.getItem('f-family');
 
 if (currentTheme) {
     document.documentElement.setAttribute('data-theme', currentTheme);
@@ -9,14 +8,7 @@ if (currentTheme) {
         //toggleSwitch.checked = true;
     }
 }
-window.onload = function() {
-if(currentFont){
-    var element = document.body;
-    if(currentFont === 'sans'){
-        element.classList.toggle("serif");
-    }
-}
-}
+
 
 function fadeInPage() {
     if (!window.AnimationEvent) { return; }
@@ -30,10 +22,12 @@ document.addEventListener('DOMContentLoaded', function() {
     var anchors = document.getElementsByTagName('a');
     
     for (var idx=0; idx<anchors.length; idx+=1) {
+        /*
         if (anchors[idx].hostname !== window.location.hostname ||
             anchors[idx].pathname === window.location.pathname) {
             continue;
         }
+        */
         anchors[idx].addEventListener('click', function(event) {
             var fader = document.getElementById('fader'),
                 anchor = event.currentTarget;
@@ -82,19 +76,3 @@ function toggleTheme(){
         localStorage.setItem('theme', 'dark');
     }    
 }
-
-function toggleSans() {
-    var theme = localStorage.getItem('f-family');
-    var element = document.body;
-
-    if (theme === 'serif') {
-        element.classList.toggle("serif");
-        localStorage.setItem('f-family', 'sans');
-    }
-    else {        
-        element.classList.toggle("serif");
-        localStorage.setItem('f-family', 'serif');
-    }  
-}
-
-//toggleSwitch.addEventListener('change', switchTheme, false);

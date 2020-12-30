@@ -1,15 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap');
-@import url('https://rsms.me/inter/inter.css');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
-/*
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Source+Serif+Pro:wght@400;600;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Literata:wght@300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
-*/
 :root {
     --secondary-color: #f0f0f0;
     --font-color: #333333;
@@ -29,68 +19,25 @@
 }
 
 html { 
+    /*
     font-family: "Inter", sans-serif;
-    
-    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    */
+    font-family: 'Manrope', sans-serif;
+    font-weight: 300;
     font-size: 1.2rem;
-    line-height: 1.65; /* 160%; */
+    line-height: 1.5; /* 160%; */
+
+    margin: 4px;
 
     -webkit-overflow-scrolling: touch;
 }
 
-.sans {
-    font-family: "Inter", sans-serif;
-}
-
-.serif {
-        /*
-    font-family: "PT Serif";
-    font-family: 'Georgia', serif;
-
-    font-family: 'Merriweather', serif;
-    font-family: 'EB Garamond', serif;
-    
-    font-family: 'Athelas';
-    font-family: 'Source Serif Pro', serif;
-    font-family: 'Literata', serif;
-    font-family: 'Playfair Display', serif;
-*/
-    font-family: 'Noto Serif';
-}
-
-code, pre, tt, .monoFont{
-    font-family: "JetBrains Mono";
-    font-weight: 300;
-} 
-
-pre {
-    padding: 1em;
-    background-color: var(--secondary-color);
-    color: var(--code-color);
-    border-radius: 8px;
-
-    transition: all 0.5s ease-in-out;
-}
 
 p{
-    margin-block-start: 0.6em;
-    margin-block-end: 0.6em;
+    margin-block-start: 0.4em;
+    margin-block-end: 0.4em;
 }
-
-/*
-@media (prefers-color-scheme: dark) {
-
-}
-@media (prefers-color-scheme: light) {
-
-}
-*/
-
-/*
-article {
-    padding-bottom: 8em;
-}
-*/
 
 body{
     background-color: var(--bg-color); /*  rgb(248, 248, 248);*/
@@ -119,11 +66,11 @@ body{
     transition: all 0.5s ease-in-out;
 }
  
-
+/*
 h1,h2,h3,h4,h5,h6 {
     font-family: "Inter", sans-serif;
 }
-
+**/
 
 h1{
     /* 
@@ -131,7 +78,7 @@ h1{
     padding: 0.5em;
     */
     text-align: left; 
-    margin-top: 1em; /* 3em; */
+    margin-top: .75em; /* 3em; */
     margin-bottom: 0.25em; /* 3em; */
     line-height: normal;
     font-weight: 700; 
@@ -180,73 +127,6 @@ svg{
 h1 a.internal-link{
     color: var(--deep-black);
 }
-
-input{
-    border: 0;
-    width: 100%;
-    height: 48px;
-    border-radius: 8px;
-    border: 0;
-    font-size: inherit;
-    outline: none;
-    font: inherit;
-    font-style: inherit;
-    background-color: var(--secondary-color);
-    color: inherit;
-    -webkit-appearance: none;
-    padding: 8px 8px 8px 16px;
-    transition: background-color 0.5s ease-in-out;
-}
-
-input::-webkit-search-decoration,
-input::-webkit-search-results-decoration {
-  display: none;
-}
-
-input::placeholder {
-    color: inherit;
-    font-size: inherit;
-    font: inherit;
-    font-style: inherit;
-    opacity: 0.5;
-    transition: all 0.5s ease-in-out;
-  }
-
-.header-nav {
-    color: var(--font-color); 
-    margin-left: 6px;
-    margin-right: 6px;
-    text-decoration: none;
-    font-size: 0.8em;
-    opacity: 0.5;
-
-    transition: all 0.5s ease-in-out; 
-}
-.header-nav:hover{
-    opacity: 1;
-}
-
-
-
-/*
-.tag-link{
-    margin-top: 0.5em;
-    color: var(--font-color); 
-    border: 1px solid var(--font-color);
-    border-radius: 20px;
-    text-decoration: none;
-    font-size: 0.8em;
-    opacity: 0.5;
-    padding: 0.25em;
-
-    transition: all 0.5s ease-in-out;
-
-}
-.tag-link:hover{
-    opacity: 1;
-}
-*/
-
 
 
 
