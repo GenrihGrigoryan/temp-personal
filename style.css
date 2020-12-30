@@ -130,9 +130,9 @@ h1{
     text-align: center; 
     padding: 0.5em;
     */
-    text-align: center; 
-    margin-top: 1.5em; /* 3em; */
-    margin-bottom: 1.5em; /* 3em; */
+    text-align: left; 
+    margin-top: 1em; /* 3em; */
+    margin-bottom: 0.25em; /* 3em; */
     line-height: normal;
     font-weight: 700; 
     font-size:  2.4rem; /* 40px; */
@@ -369,9 +369,10 @@ hr {
 
 .desc{
     text-align: center; 
-    opacity: 0.5;
-    padding-bottom: 2em;
+    /*opacity: 0.5;*/
+    padding-bottom: 1em;
 }
+
 
 @media only screen and (max-width: 768px){
 
@@ -379,19 +380,4 @@ hr {
         font-size: 1.1rem;
     }
 
-    h1{
-        margin-top: 1em; /* 3em; */
-        margin-bottom: 1em; /* 3em; */
-        font-size:  2.2rem; /* 40px; */
-    }
-
-    .desc{
-        padding-bottom: 1em;
-    }
-
-    /*
-    .tag-link, .header-nav{
-        font-size: 0.7em;
-    }
-    */
 }
